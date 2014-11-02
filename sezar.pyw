@@ -2,7 +2,7 @@
 from Tkinter import *
 import time
 anapen = Tk()
-anapen.title(u"Ceasar Yöntemiyle Şifreleme")
+anapen.title(u"Sezar Kriptosu - Şifreleme & Şifre Çözme")
 anapen.geometry("480x600+300+100")
 anapen.wm_iconbitmap("gray12")
 anapen.resizable(False, False)
@@ -17,7 +17,7 @@ menu.add_cascade(label=u"Konsol")
 menu.add_cascade(label=u"Yapımcı")
 
 #Kullanıcı Giriş
-bilgiler = ("MuRe","cyber-warrior")
+bilgiler = ("Dark Devilz","MuReCoder")
 denemeHakki = 3
 zaman = 0
 
@@ -25,10 +25,10 @@ def girisYap():
     global denemeHakki, zaman
 
     if denemeHakki <= 0:
-        if time.time()-zaman >= 5:
+        if time.time()-zaman >= 900:
             denemeHakki = 3
         else:
-            sonuc.config(text = u"5 sn Beklemeniz gerekiyor")
+            sonuc.config(text = u"15 dk Beklemeniz gerekiyor")
             return False
     
     username = isim.get()
@@ -78,7 +78,7 @@ def ekraniTemizle():
      
     #Pencere
     Karsila = Label(anapen)
-    Karsila.config(text = u"Ceasar Yöntemiyle Şifreleme ve Şifre Çözme - Başarı İle Giriş Yaptınız")
+    Karsila.config(text = u"Sayın Dark Devilz, Hoş Geldiniz")
     Karsila.place(x=1,y=1)
      
     GirisBir = Label(anapen)
@@ -108,7 +108,7 @@ def ekraniTemizle():
 
      
     hesapButon = Button(anapen)
-    hesapButon.config(text = u"Hesapla!",command = yapistir)
+    hesapButon.config(text = u"Şifrele!",command = yapistir)
     hesapButon.place(x=1,y=550)
      
     cozButon = Button(anapen)
@@ -126,7 +126,7 @@ def ekraniTemizle():
     
 
 karsilama = Label(anapen)
-karsilama.config(text = u"Ceasar Crypto Programına Hoş Geldiniz")
+karsilama.config(text = u"Sezar Kripto | Hoş Geldiniz")
 karsilama.place(x=1,y=1)
 
 isimSor = Label(anapen)
@@ -152,7 +152,7 @@ sonuc.config(text = u"Henüz işlem yapılmadı ")
 sonuc.place(x=300,y=20)
 
 ithafen = Label(anapen)
-ithafen.config(text = u"Kardeşim eSckral'a ithafen - Kara Ayaz")
+ithafen.config(text = u"DarkDevilz Adına Kodlanmıştır...")
 ithafen.place(x=1,y=75)
 
 
